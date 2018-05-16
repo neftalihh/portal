@@ -13,6 +13,7 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit(){
     $(document).ready(function(){
       $(".dropdown-trigger").dropdown();
+      $('.modal').modal();
     });
   }
 }

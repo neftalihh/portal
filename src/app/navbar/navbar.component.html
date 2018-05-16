@@ -1,0 +1,16 @@
+<nav class="nav-extended">
+  <div class="nav-wrapper blue">
+    <a href="#" class="brand-logo"><img class="brand" src="../assets/alpura.png"  width="225px" /></a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li class="active"><a href="sass.html">Productos</a></li>
+    </ul>
+  </div>
+  <div class="divider blue lighten-2"></div>
+  <div class="nav-content blue">
+    <ul class="tabs tabs-transparent">
+      <li class="tab"><a [routerLink]="['/productos']" routerLinkActive="active" class="active" >Listar</a></li>
+      <li class="tab"><a  [routerLink]="['/agregar']" >Agregar</a></li>
+    </ul>
+  </div>
+</nav>

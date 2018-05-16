@@ -1,0 +1,26 @@
+<div><h2>Producto</h2></div>
+<div class="divider"></div>
+<div class="row">
+    <form class="col s12" (ngSubmit)="save(product)"   #f="ngForm" >
+      <div class="row">
+        <div class="input-field col s6">
+          
+          <input id="id_pro" type="number" name="id_pro" [(ngModel)]="product.id" class="validate">
+          <label for="id_pro">id</label>
+        </div>
+        <div class="input-field col s6">
+          
+          <input id="upc" type="text" name="upc" class="validate" [(ngModel)]="product.upc">
+          <label for="upc">Upc</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="desc" type="text" name="desc" class="validate" [(ngModel)]="product.description" >
+            <label for="desc">Descripcion</label>
+        </div>
+      </div>
+      <div class="input-field col s12">
+        <button class="btn">Guardar</button>
+      </div>
+    </form>
+  </div>
+  {{product.id}}
