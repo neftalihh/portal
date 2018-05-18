@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiServer: "http://172.108.17.236:8080/api/webservices"
+  apiServer: "http://172.108.17.236:8080/api/products"
 };

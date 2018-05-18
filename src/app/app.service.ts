@@ -20,9 +20,9 @@ export class ProductsService
         this.options = new RequestOptions({headers: this.headers});
     }
 
-    getProducts(): Observable<any> {
+    getProducts(): Observable<Product[]> {
         return this.http.get(this.server)
-                   .map((response: Response) => <any>response.json());
+                   .map((response: Response) => <Product[]>response.json());
     }
 
 }
